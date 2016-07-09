@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id:
+  channel_id:
+  title: Reddit
+  link: www.reddit.com
+  approved: false
+
+two:
+  user_id:
+  channel_id:
+  title: google
+  link: www.google.com
+  approved: false

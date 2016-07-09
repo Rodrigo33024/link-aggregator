@@ -1,0 +1,2 @@
+module CommunityLinksHelper
+end

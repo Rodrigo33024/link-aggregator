@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-8">
+    <h1>Community Links</h1>
+    <ul>
+      <% @community_links.each do |community_link| %>
+        <li>
+          <span class="label label-default" style="background: <%= community_link.channel.color %>">
+            <%= community_link.channel.slug %>
+          </span>
+          <%= link_to community_link.title.capitalize, "http://#{community_link.link}",  target: "_blank" %>
+          <small>
+            Contributed by:
+            <%= community_link.user.email %>
+            <%=  time_ago_in_words(community_link.updated_at) %>
+          </small>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <%= render 'partials/community_form' %>
+</div>

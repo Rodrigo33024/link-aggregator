@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Rails
+  slug: rails
+  color: red
+
+two:
+  title: Laravel
+  slug: laravel
+  color: purple
