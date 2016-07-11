@@ -5,7 +5,7 @@ class CreateCommunityLinks < ActiveRecord::Migration
       t.references :channel, index: true, foreign_key: true
       t.string :title
       t.string :link
-      t.boolean :approved
+      t.boolean :approved, default: false, null: false
 
       t.timestamps null: false
     end

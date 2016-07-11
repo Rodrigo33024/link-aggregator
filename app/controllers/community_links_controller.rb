@@ -3,7 +3,8 @@ class CommunityLinksController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @community_links = CommunityLink.includes(:channel, :user).all
+    @community_links = CommunityLink.includes(:channel, :user)
+                                    .where(approved: true)
     @community_link = CommunityLink.new
   end
 

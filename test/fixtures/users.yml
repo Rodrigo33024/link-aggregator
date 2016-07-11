@@ -1,12 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   email: userone@test.com
   password: password
   first_name: Leia
   last_name: Recoba
 
 two:
+  id: 2
   email: usertwo@test.com
   password: password
   first_name: Damian
